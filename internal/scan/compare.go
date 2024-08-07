@@ -42,7 +42,7 @@ func hostsCompare() {
 
 	for _, oneHost := range foundHostsMap {
 
-		msg := fmt.Sprintf("UNKNOWN HOST IP: '%s', MAC: '%s', Hw: '%s'", oneHost.IP, oneHost.Mac, oneHost.Hw)
+		msg := fmt.Sprintf("💻 ACHTUNG Unbekannter Host. IP: '%s', MAC: '%s', Hw: '%s'", oneHost.IP, oneHost.Mac, oneHost.Hw)
 		log.Println("WARN:", msg)
 		notify.Shoutrrr(msg, appConfig.ShoutURL) // Notify through Shoutrrr
 
